@@ -1,0 +1,26 @@
+.app-main {
+    min-height: calc(100vh - 60px);
+    padding-top: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .app-main {
+        min-height: calc(100vh - 50px);
+        padding-top: 0.5rem;
+    }
+}
+
+
+

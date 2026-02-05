@@ -1,0 +1,219 @@
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 2rem;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.auth-box {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(0, 168, 225, 0.3);
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.auth-title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #00A8E1;
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #ccc;
+    margin: 0 0 2rem 0;
+    font-size: 0.95rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-wrapper input {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 168, 225, 0.3);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.password-input-wrapper input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.password-input-wrapper input:focus {
+    outline: none;
+    border-color: #00A8E1;
+    box-shadow: 0 0 10px rgba(0, 168, 225, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.password-input-wrapper input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.password-toggle-btn {
+    position: absolute;
+    right: 0.8rem;
+    background: none;
+    border: none;
+    color: #00A8E1;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.password-toggle-btn:hover:not(:disabled) {
+    transform: scale(1.1);
+    color: #0088BB;
+}
+
+.password-toggle-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 168, 225, 0.3);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #00A8E1;
+    box-shadow: 0 0 10px rgba(0, 168, 225, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.form-group input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.alert {
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.alert-error {
+    background: rgba(255, 71, 87, 0.2);
+    color: #ff4757;
+    border: 1px solid #ff4757;
+}
+
+.alert-success {
+    background: rgba(46, 213, 115, 0.2);
+    color: #2ed573;
+    border: 1px solid #2ed573;
+}
+
+.btn-submit {
+    padding: 0.9rem;
+    background: #00A8E1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: linear-gradient(135deg, #00A8E1 0%, #ff9900 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 168, 225, 0.3), 0 0 15px rgba(255, 153, 0, 0.3);
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.auth-footer {
+    text-align: center;
+    color: #ccc;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.auth-link {
+    color: #00A8E1;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.auth-link:hover {
+    color: #0088BB;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .auth-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .auth-title {
+        font-size: 1.5rem;
+    }
+
+    .auth-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+
+

@@ -1,0 +1,97 @@
+.ott-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 168, 225, 0.2);
+    border-radius: 8px;
+}
+
+.ott-section h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #00A8E1;
+    margin: 0 0 1.2rem 0;
+}
+
+.ott-platforms-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.ott-platform-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(0, 168, 225, 0.1);
+    border: 2px solid rgba(0, 168, 225, 0.3);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.ott-platform-card:hover {
+    background: rgba(0, 168, 225, 0.2);
+    border-color: #00A8E1;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 168, 225, 0.3);
+}
+
+.ott-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: brightness(0.9);
+}
+
+.ott-platform-card:hover .ott-logo {
+    filter: brightness(1.1);
+}
+
+.ott-placeholder {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00A8E1, #0088BB);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.ott-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.no-platforms {
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .ott-platforms-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .ott-section {
+        padding: 1rem;
+    }
+
+    .ott-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
