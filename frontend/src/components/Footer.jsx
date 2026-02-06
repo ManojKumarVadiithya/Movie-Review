@@ -1,9 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+    const navigate = useNavigate();
+
+    const handleCategoryClick = (category) => {
+        navigate(`/search?q=${encodeURIComponent(category)}`);
+    };
 
     return (
         <footer className="footer">
@@ -29,7 +34,7 @@ const Footer = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/login">Login</Link></li>
                         <li><Link to="/register">Register</Link></li>
-                        <li><a href="#features">Features</a></li>
+                        <li><Link to="/">Features</Link></li>
                     </ul>
                 </div>
 
@@ -37,10 +42,10 @@ const Footer = () => {
                 <div className="footer-section">
                     <h4 className="footer-section-title">Categories</h4>
                     <ul className="footer-links">
-                        <li><a href="#action">Action</a></li>
-                        <li><a href="#drama">Drama</a></li>
-                        <li><a href="#comedy">Comedy</a></li>
-                        <li><a href="#thriller">Thriller</a></li>
+                        <li><button className="category-btn" onClick={() => handleCategoryClick('Action')}>Action</button></li>
+                        <li><button className="category-btn" onClick={() => handleCategoryClick('Drama')}>Drama</button></li>
+                        <li><button className="category-btn" onClick={() => handleCategoryClick('Comedy')}>Comedy</button></li>
+                        <li><button className="category-btn" onClick={() => handleCategoryClick('Thriller')}>Thriller</button></li>
                     </ul>
                 </div>
 

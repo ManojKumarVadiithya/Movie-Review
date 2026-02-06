@@ -1,0 +1,124 @@
+.auth-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.auth-modal-content {
+    background: linear-gradient(135deg, #1a2a3a 0%, #0f1f2f 100%);
+    border: 2px solid rgba(0, 168, 225, 0.4);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 168, 225, 0.2);
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-modal-title {
+    color: #00A8E1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.auth-modal-message {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+.auth-modal-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-primary,
+.btn-confirm,
+.btn-cancel {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00A8E1 0%, #0088b8 100%);
+    color: white;
+    flex: 1;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0088b8 0%, #006a8f 100%);
+    box-shadow: 0 8px 20px rgba(0, 168, 225, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-cancel {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex: 1;
+}
+
+.btn-cancel:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-confirm {
+    background: linear-gradient(135deg, #00A8E1 0%, #0088b8 100%);
+    color: white;
+    flex: 1;
+}
+
+.btn-confirm:hover {
+    background: linear-gradient(135deg, #0088b8 0%, #006a8f 100%);
+    box-shadow: 0 8px 20px rgba(0, 168, 225, 0.3);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .auth-modal-content {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+
+    .auth-modal-title {
+        font-size: 1.3rem;
+    }
+
+    .btn-primary,
+    .btn-confirm,
+    .btn-cancel {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
