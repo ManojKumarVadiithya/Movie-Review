@@ -1,0 +1,29 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.star {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #555;
+    transition: all 0.2s ease;
+    padding: 0;
+}
+
+.star.filled {
+    color: #ffd700;
+}
+
+.star:hover:not(:disabled) {
+    transform: scale(1.1);
+}
+
+.rating-value {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-left: 0.4rem;
+}

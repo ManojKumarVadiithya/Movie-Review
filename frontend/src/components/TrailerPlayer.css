@@ -1,0 +1,66 @@
+/* ===============================
+   TRAILER WRAPPER
+================================= */
+.trailer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===============================
+   VIDEO CONTAINER
+================================= */
+.video-container {
+    width: 100%;
+    max-width: 900px;          /* prevents over-stretching */
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+    transform: scale(1.01);
+}
+
+/* ===============================
+   IFRAME
+================================= */
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===============================
+   NO TRAILER
+================================= */
+.no-trailer {
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+
+    .video-container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .no-trailer {
+        border-radius: 10px;
+    }
+}

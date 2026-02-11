@@ -1,0 +1,222 @@
+/* ===============================
+   REVIEW LIST CONTAINER
+================================= */
+.review-list-container {
+    margin: 2rem 0;
+}
+
+/* ===============================
+   HEADER
+================================= */
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.reviews-header h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ===============================
+   SORT DROPDOWN
+================================= */
+.sort-select {
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sort-select:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.sort-select:focus {
+    outline: none;
+    border-color: #00A8E1;
+}
+
+/* ===============================
+   REVIEW LIST
+================================= */
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===============================
+   EACH REVIEW ITEM
+================================= */
+.review-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===============================
+   TOP ROW (User Date Edit Delete)
+================================= */
+.review-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+/* Left Side: User + Date */
+.review-top > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* Username */
+.review-user {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Date */
+.review-date {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+}
+
+/* ===============================
+   ACTION BUTTONS
+================================= */
+.review-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-actions button {
+    background: none;
+    border: none;
+    font-size: 0.8rem;
+    color: #aaa;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s ease;
+}
+
+.review-actions button:hover {
+    color: #ffffff;
+}
+
+/* ===============================
+   REVIEW TEXT
+================================= */
+.review-text {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* ===============================
+   EDIT MODE
+================================= */
+.review-edit {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.edit-textarea {
+    width: 100%;
+    margin-top: 0.8rem;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 0.85rem;
+    resize: none;
+}
+
+.edit-textarea:focus {
+    outline: none;
+    border-color: #00A8E1;
+}
+
+/* Edit Buttons */
+.edit-actions {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.btn-save {
+    background: #00A8E1;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-save:hover {
+    background: #008ec2;
+}
+
+.btn-cancel {
+    background: #444;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-cancel:hover {
+    background: #555;
+}
+
+/* ===============================
+   LOAD MORE BUTTON
+================================= */
+.btn-load-more {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.6rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.btn-load-more:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* ===============================
+   STATES
+================================= */
+.loading,
+.no-reviews {
+    text-align: center;
+    padding: 2rem 0;
+    color: #888;
+    font-size: 0.95rem;
+}

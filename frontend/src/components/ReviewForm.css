@@ -1,0 +1,107 @@
+.review-form-compact {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.review-top {
+    margin-bottom: 0.8rem;
+}
+
+/* ===============================
+   TEXTAREA
+================================= */
+.review-form-compact textarea {
+    width: 100%;
+    padding: 0.6rem 0.9rem;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.9rem;
+    resize: none;
+    min-height: 65px;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+}
+
+.review-form-compact textarea:focus {
+    outline: none;
+    border-color: #00A8E1;
+}
+
+/* ===============================
+   BUTTON WRAPPER
+================================= */
+.review-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+/* ===============================
+   FORCE BUTTON STYLE
+================================= */
+.review-form-compact .review-actions button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 28px !important;   /* Force spacing */
+    min-height: 44px;
+
+    border-radius: 10px;
+    border: none !important;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    background: linear-gradient(135deg, #00A8E1 0%, #0088BB 100%) !important;
+
+    box-shadow: 0 6px 18px rgba(0, 168, 225, 0.35);
+
+    transition: all 0.25s ease;
+}
+
+/* ENABLED HOVER */
+.review-form-compact .review-actions button:not(:disabled):hover {
+    background: linear-gradient(135deg, #00A8E1 0%, #ff9900 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 168, 225, 0.45),
+                0 0 15px rgba(255, 153, 0, 0.3);
+}
+
+/* ACTIVE */
+.review-form-compact .review-actions button:not(:disabled):active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 168, 225, 0.35);
+}
+
+/* DISABLED */
+.review-form-compact .review-actions button:disabled {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* ERROR */
+.compact-error {
+    color: #ff4d4f;
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+}
+
+/* LOGIN PROMPT */
+.login-prompt {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
