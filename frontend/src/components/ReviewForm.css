@@ -10,9 +10,7 @@
     margin-bottom: 0.8rem;
 }
 
-/* ===============================
-   TEXTAREA
-================================= */
+/* Text Area */
 .review-form-compact textarea {
     width: 100%;
     padding: 0.6rem 0.9rem;
@@ -32,18 +30,14 @@
     border-color: #00A8E1;
 }
 
-/* ===============================
-   BUTTON WRAPPER
-================================= */
+/* Button Wrapper */
 .review-actions {
     display: flex;
     justify-content: flex-end;
     margin-top: 1rem;
 }
 
-/* ===============================
-   FORCE BUTTON STYLE
-================================= */
+/* Force Button Style */
 .review-form-compact .review-actions button {
     display: inline-flex;
     align-items: center;

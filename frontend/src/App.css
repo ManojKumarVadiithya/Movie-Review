@@ -12,9 +12,7 @@ body {
     color: #fff;
 }
 
-/* ===============================
-   MAIN CONTENT WRAPPER
-================================= */
+/* Main content Wrapper  */
 
 /* Add padding equal to header height */
 .app-main {
@@ -22,9 +20,7 @@ body {
     padding-top: 70px; /* SAME AS HEADER HEIGHT */
 }
 
-/* ===============================
-   MOBILE FIX
-================================= */
+/* Mobile fix  */
 @media (max-width: 768px) {
     .app-main {
         padding-top: 60px; /* Mobile header height */

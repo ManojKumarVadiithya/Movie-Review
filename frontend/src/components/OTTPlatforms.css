@@ -1,6 +1,4 @@
-/* ===============================
-   OTT CONTAINER (INNER ONLY)
-================================= */
+/* OTT Container (Inner only) */
 .ott-scroll-container {
     display: flex;
     gap: 0.8rem;
@@ -13,9 +11,7 @@
     display: none;
 }
 
-/* ===============================
-   PLATFORM PILL
-================================= */
+/* Platform pill */
 .ott-pill {
     display: flex;
     align-items: center;
@@ -37,18 +33,14 @@
     transform: translateY(-2px);
 }
 
-/* ===============================
-   LOGO
-================================= */
+/* Logo */
 .ott-logo {
     width: 22px;
     height: 22px;
     object-fit: contain;
 }
 
-/* ===============================
-   PLACEHOLDER
-================================= */
+/* Placdehoder */
 .ott-placeholder {
     width: 22px;
     height: 22px;
@@ -61,9 +53,7 @@
     font-weight: bold;
 }
 
-/* ===============================
-   EMPTY STATE
-================================= */
+/* Empty State */
 .ott-empty {
     font-size: 0.9rem;
     color: #aaa;

@@ -1,13 +1,9 @@
-/* ===============================
-   REVIEW LIST CONTAINER
-================================= */
+/* Review list container */
 .review-list-container {
     margin: 2rem 0;
 }
 
-/* ===============================
-   HEADER
-================================= */
+/* Header */
 .reviews-header {
     display: flex;
     justify-content: space-between;
@@ -22,9 +18,7 @@
     margin: 0;
 }
 
-/* ===============================
-   SORT DROPDOWN
-================================= */
+/* Sort dropdown */
 .sort-select {
     background: rgba(255, 255, 255, 0.06);
     color: #fff;
@@ -53,17 +47,13 @@
     flex-direction: column;
 }
 
-/* ===============================
-   EACH REVIEW ITEM
-================================= */
+/* Each review item */
 .review-item {
     padding: 1.5rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ===============================
-   TOP ROW (User Date Edit Delete)
-================================= */
+/* Top row (User Date Edit Delete) */
 .review-top {
     display: flex;
     justify-content: space-between;
@@ -93,9 +83,7 @@
     margin: 0;
 }
 
-/* ===============================
-   ACTION BUTTONS
-================================= */
+/* Action Buttons */
 .review-actions {
     display: flex;
     align-items: center;
@@ -116,9 +104,7 @@
     color: #ffffff;
 }
 
-/* ===============================
-   REVIEW TEXT
-================================= */
+/* Review text */
 .review-text {
     margin-top: 0.6rem;
     font-size: 0.9rem;
@@ -126,9 +112,7 @@
     color: #ddd;
 }
 
-/* ===============================
-   EDIT MODE
-================================= */
+/* Edit mode */
 .review-edit {
     background: rgba(255, 255, 255, 0.04);
     padding: 1rem;
@@ -190,9 +174,7 @@
     background: #555;
 }
 
-/* ===============================
-   LOAD MORE BUTTON
-================================= */
+/* Load more buttons */
 .btn-load-more {
     margin-top: 1.5rem;
     width: 100%;
@@ -210,9 +192,7 @@
     background: rgba(255, 255, 255, 0.12);
 }
 
-/* ===============================
-   STATES
-================================= */
+/* States */
 .loading,
 .no-reviews {
     text-align: center;
