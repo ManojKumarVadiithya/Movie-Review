@@ -1,6 +1,6 @@
 # 🎬 Movie Review & Trailer Streaming Application
 
-##Live Link : https://moviereview-alpha.vercel.app/
+## Live Link : https://moviereview-alpha.vercel.app/
 
 A full-stack web application for discovering movies, watching trailers, and sharing reviews with star ratings. Built with **React** + **Spring Boot** + **MongoDB Atlas**, containerized with **Docker**, and deployed on **Render**.
 
