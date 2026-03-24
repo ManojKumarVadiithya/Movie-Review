@@ -14,6 +14,8 @@ A full-stack web application for discovering movies, watching trailers, and shar
 - Docker containerization for production deployment
 - Cloud-based MongoDB Atlas integration
 
+---
+
 ## 🎯 What is This Project?
 
 This is a comprehensive, production-grade movie discovery and review platform combining user-generated content with professional movie metadata. It demonstrates full-stack architecture, secure authentication, and cloud deployment best practices.
@@ -29,50 +31,7 @@ This is a comprehensive, production-grade movie discovery and review platform co
 
 **Perfect for**: Movie enthusiasts, content creators, developers showcasing production-grade applications, and anyone wanting a secure, scalable movie platform.
 
-
-## How to Run This Project
-
-### 🔴 Development Mode (Local)
-
-**Step 1: Clone & Setup Backend**
-```bash
-cd backend
-
-# Install dependencies (Maven handles this)
-mvn clean install
-
-# Update application.properties with local MongoDB
-# spring.data.mongodb.uri=mongodb://localhost:27017/movie_review_db
-
-# Run backend
-mvn spring-boot:run
-
-# Backend available at http://localhost:8080
-```
-
-**Step 2: Setup Frontend**
-```bash
-cd frontend
-
-# Install Node dependencies
-npm install
-
-# Configure local API endpoint
-# Edit .env.development: VITE_API_URL=http://localhost:8080/api/v1
-
-# Start Vite dev server
-npm run dev
-
-# Frontend available at http://localhost:5173
-```
-
-**Step 3: Open in Browser**
-```
-Frontend: http://localhost:5173
-Backend API: http://localhost:8080
-MongoDB: Local instance on localhost:27017
-```
-
+---
 
 ## ✨ Key Features
 
@@ -174,70 +133,51 @@ MongoDB: Local instance on localhost:27017
 - **Render** - Application hosting platform
 - **Eclipse Temurin JDK 17** - Docker base image
 
-## 🚀 Getting Started
 
-### Prerequisites
+## How to Run This Project
 
-- **Java 17+** - For backend
-- **Node.js 16+** - For frontend
-- **MongoDB** - Database (local or cloud)
-- **Maven** - Build tool
+### 🔴 Development Mode (Local)
 
-### Backend Setup
-
-#### 1. Install Java & Maven
-
-```bash
-# Check Java version (should be 17+)
-java -version
-
-# Check Maven version
-mvn -version
-
-# If not installed, download from:
-# Java: https://adoptium.net/
-# Maven: https://maven.apache.org/download.cgi
-```
-
-#### 2. Build & Run Backend
-
+**Step 1: Clone & Setup Backend**
 ```bash
 cd backend
 
-# Build the project
-mvn clean package
+# Install dependencies (Maven handles this)
+mvn clean install
 
-# Run the application
+# Update application.properties with local MongoDB
+# spring.data.mongodb.uri=mongodb://localhost:27017/movie_review_db
+
+# Run backend
 mvn spring-boot:run
 
-# The backend will start at http://localhost:8080
+# Backend available at http://localhost:8080
 ```
 
-### Frontend Setup
-
-#### 1. Install Dependencies
-
+**Step 2: Setup Frontend**
 ```bash
 cd frontend
+
+# Install Node dependencies
 npm install
-```
 
-#### 2. Configure API URL
+# Configure local API endpoint
+# Edit .env.development: VITE_API_URL=http://localhost:8080/api/v1
 
-Edit `frontend/.env.development`:
-
-```
-VITE_API_URL=http://localhost:8080/api/v1
-```
-
-#### 3. Run Development Server
-
-```bash
+# Start Vite dev server
 npm run dev
 
-# Frontend will start at http://localhost:5173
+# Frontend available at http://localhost:5173
 ```
 
+**Step 3: Open in Browser**
+```
+Frontend: http://localhost:5173
+Backend API: http://localhost:8080
+MongoDB: Local instance on localhost:27017
+```
+
+---
 
 ## 🔒 Authentication Flow
 
@@ -362,15 +302,6 @@ jwt.expiration=86400000              # Expiration in milliseconds (24 hours)
 - Invalid examples: t01234567, tt012345 (too short), tt0123456789 (too long)
 
 
-## 📚 Learning Resources
-
-- [React Router Documentation](https://reactrouter.com/)
-- [Spring Boot Guide](https://spring.io/guides/gs/spring-boot/)
-- [MongoDB University](https://university.mongodb.com/)
-- [JWT Introduction](https://jwt.io/introduction)
-- [Docker Documentation](https://docs.docker.com/)
-- [Render Deployment Guide](https://render.com/docs)
-- [Axios Documentation](https://axios-http.com/)
 
 ## 🤝 Contributing
 
